@@ -1,7 +1,7 @@
 # elibrary_downloader
 Для студентов: выкачивалка данных о научных статьях с elibrary.ru
 
-Статьи на сайте [elibrary.ru] выглядят как http://elibrary.ru/item.asp?id=30574808
+Статьи на сайте elibrary.ru выглядят как http://elibrary.ru/item.asp?id=30574808
 
 Если перебирать разные цифры в поле id= то можно получить ссылки на разные статьи.
 
