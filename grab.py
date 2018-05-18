@@ -27,10 +27,10 @@ class Article:
     def __str__(self):
         s=""
         s+="Статья: "+ self.title+"\n"
-        s+="Авторы: "+ ', '.join(self.authors)+"\n"
-        s+="Ключевые слова: "+ ', '.join(self.keywords)+"\n"
-        s+="Год: "+ str(self.year)+"\n"
-        s+="Аннотация: "+self.annotation+"\n"
+        #s+="Авторы: "+ ', '.join(self.authors)+"\n"
+        #s+="Ключевые слова: "+ ', '.join(self.keywords)+"\n"
+        #s+="Год: "+ str(self.year)+"\n"
+        #s+="Аннотация: "+self.annotation+"\n"
         return s
 
 
@@ -84,9 +84,13 @@ def Main():
 
     ids=[30574806, 30574807, 30574808, 30574809, 30574810]
 
-    for id in ids :
-        bib=dl.GetArticle(id)
-        print(bib)
+    #for id in ids :
+    for id in range(30574810, 30575000) :
+        try:
+            bib=dl.GetArticle(id)
+            print(bib)
+        except Exception:
+            print("id:", id," ERROR")
 
     return
 
@@ -95,4 +99,5 @@ def Main():
 if __name__ == "__main__":
     # execute only if run as a script
     Main()
+
 
